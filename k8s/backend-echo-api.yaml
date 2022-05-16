@@ -1,0 +1,11 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Backend
+metadata:
+  name: echo-api-backend-sample
+spec:
+  description: Echo API Backend
+  name: Operated Backend Echo API
+  privateBaseURL: 'https://echo-api.3scale.net'
+  providerAccountRef:
+    name: dev-tenant-secret
+  systemName: echo_api_backend

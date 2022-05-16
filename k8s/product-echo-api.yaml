@@ -1,0 +1,24 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Product
+metadata:
+  name: echo-api-product-sample
+  namespace: threescale-development
+spec:
+  applicationPlans:
+    plan_basic:
+      limits:
+        - metricMethodRef:
+            systemName: hits
+          period: day
+          value: 10
+      name: Basic
+    plan_unlimited:
+      name: Unlimited
+  providerAccountRef:
+    name: dev-tenant-secret
+  name: Operated Product Echo API
+  systemName: echo_api_product
+  description: Echo API Product
+  backendUsages:
+    echo_api_backend:
+      path: /
