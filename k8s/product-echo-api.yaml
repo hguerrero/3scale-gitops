@@ -3,6 +3,11 @@ kind: Product
 metadata:
   name: echo-api-product-sample
 spec:
+  mappingRules:
+    - httpMethod: GET
+      increment: 1
+      metricMethodRef: hits
+      pattern: /
   applicationPlans:
     plan_basic:
       limits:
