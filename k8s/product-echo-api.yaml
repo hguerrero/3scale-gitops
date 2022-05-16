@@ -2,7 +2,6 @@ apiVersion: capabilities.3scale.net/v1beta1
 kind: Product
 metadata:
   name: echo-api-product-sample
-  namespace: threescale-development
 spec:
   applicationPlans:
     plan_basic:
