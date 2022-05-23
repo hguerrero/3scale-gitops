@@ -20,7 +20,7 @@ spec:
       name: Unlimited
       setupFee: '10'
   providerAccountRef:
-    name: dev-tenant-secret
+    name: tenant-secret
   name: Operated Product Echo API
   systemName: echo_api_product
   description: Echo API Product

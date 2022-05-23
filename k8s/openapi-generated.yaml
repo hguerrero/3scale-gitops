@@ -1,0 +1,9 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: OpenAPI
+metadata:
+  name: openapi-from-url
+spec:
+  openapiRef:
+    url: 'http://rhoam-openapi.quarkus.svc.cluster.local:8080/openapi'
+  providerAccountRef:
+    name: tenant-secret

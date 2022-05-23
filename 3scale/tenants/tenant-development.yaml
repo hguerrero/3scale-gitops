@@ -9,8 +9,8 @@ spec:
   organizationName: development
   passwordCredentialsRef:
     name: tenant-admin-secret
-  systemMasterUrl: 'https://master.apps.cluster-78stm.78stm.sandbox1231.opentlc.com'
+  systemMasterUrl: 'https://master.apps.cluster-wpdbw.wpdbw.sandbox265.opentlc.com'
   tenantSecretRef:
     name: dev-tenant-secret
-    namespace: threescale-development
+    namespace: threescale
   username: admin
