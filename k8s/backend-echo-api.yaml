@@ -7,5 +7,5 @@ spec:
   name: Operated Backend Echo API
   privateBaseURL: 'https://echo-api.3scale.net'
   providerAccountRef:
-    name: dev-tenant-secret
+    name: tenant-secret
   systemName: echo_api_backend

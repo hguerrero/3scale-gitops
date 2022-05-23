@@ -1,0 +1,16 @@
+apiVersion: capabilities.3scale.net/v1alpha1
+kind: Tenant
+metadata:
+  name: threescale-testing-tenant
+spec:
+  email: test@example.openshift.com
+  masterCredentialsRef:
+    name: system-seed
+  organizationName: testing
+  passwordCredentialsRef:
+    name: tenant-admin-secret
+  systemMasterUrl: 'https://master.apps.cluster-wpdbw.wpdbw.sandbox265.opentlc.com'
+  tenantSecretRef:
+    name: test-tenant-secret
+    namespace: threescale
+  username: admin
