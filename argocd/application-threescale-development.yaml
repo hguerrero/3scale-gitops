@@ -1,0 +1,15 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: threescale-development
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: threescale-development
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: k8s
+    repoURL: 'https://github.com/hguerrero/3scale-gitops.git'
+    targetRevision: dev
+  syncPolicy: {}
